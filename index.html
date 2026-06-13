@@ -1,79 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio | PortfolioHUB</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PortfolioHUB — Bruno Venicius</title>
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Portfolio<span>HUB</span></a>
+  <nav class="navbar">
+    <span class="logo">Portfolio<b>HUB</b></span>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="sobre">
+    <div class="hero-content">
+      <img src="assets/img/perfil.png" alt="Foto de Bruno Venicius" class="foto-perfil"/>
+      <div class="hero-text">
+        <h1>Olá, eu sou <span>Bruno Venicius</span></h1>
+        <p class="subtitulo">Estudante de Engenharia de Software & Desenvolvedor em Formação</p>
+        <p class="descricao">Seja bem-vindo ao meu PortfolioHUB. Este espaço centraliza meus principais projetos acadêmicos e práticos, servindo como uma vitrine viva das minhas competências técnicas.</p>
+        <div class="botoes">
+          <a href="#projetos" class="btn-primary">Ver Projetos</a>
+          <a href="assets/docs/curriculo.pdf" class="btn-secondary" target="_blank">Baixar Currículo</a>
         </div>
-    </header>
+      </div>
+    </div>
+  </section>
 
-    <section class="hero">
-        <div class="container hero-grid">
-            <div class="hero-avatar">
-                <img src="assets/img/perfil.jpg" alt="Sua Foto de Perfil" class="profile-img">
-            </div>
-            <div class="hero-content">
-                <h1>Olá, eu sou <span> Bruno </span></h1>
-                <p class="subtitle">Estudante de Tecnologia & Desenvolvedor em Formação</p>
-                <p class="description">
-                    Seja bem-vindo ao meu PortfolioHUB. Este espaço centraliza meus principais projetos acadêmicos e práticos, servindo como uma vitrine viva das minhas competências técnicas e evolução na engenharia de software.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
-                    <a href="assets/docs/curriculo.pdf" target="_blank" class="btn btn-secondary">Baixar Currículo (PDF)</a>
-                </div>
-            </div>
+  <section class="projetos" id="projetos">
+    <h2>Projetos em Destaque</h2>
+    <div class="cards">
+
+      <div class="card">
+        <h3>Password Generator</h3>
+        <p>Gerador de senhas. Define comprimento e tipos de caracteres (letras, números e símbolos).</p>
+        <div class="tags">
+          <span>JavaScript
         </div>
-    </section>
+        <a href="#" class="card-link">Ver projeto →</a>
+      </div>
 
-    <section id="projetos" class="projects-section">
-        <div class="container">
-            <h2 class="section-title">Projetos em Destaque</h2>
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <div class="card-body">
-                        <h3>Terminal Chess — Xadrez no Console</h3>
-                        <p>BJogo de xadrez completo desenvolvido em C# com orientação a objetos, rodando no terminal. Projeto prático do curso de C# da Udemy com o professor Nélio Alves, aplicando herança, polimorfismo, encapsulamento e tratamento de exceções para simular todas as regras oficiais do xadrez.</p>
-                        <span class="tech-badge">C#/OOP</span>
-                        <span class="tech-badge">Console/Udemy</span>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" target="_blank" class="card-link">Visualizar Deploy →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="card-body">
-                        <h3>Password Generator — Gerador de Senhas</h3>
-                        <p>Gerador de senhas seguras desenvolvido em JavaScript com node.js, (letras, números e símbolos). Projeto desenvolvido com base em cursos e tutoriais do YouTube, consolidando conhecimentos em DOM manipulation e lógica de programação front-end.</p>
-                        <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge"></span>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" target="_blank" class="card-link">Código no GitHub →</a>
-                    </div>
-                </div>
-
-            </div>
+      <div class="card">
+        <h3>Terminal Chess</h3>
+        <p>Jogo de xadrez completo no console em C#, aplicando herança, polimorfismo e encapsulamento. Curso do Prof. Nélio Alves — Udemy.</p>
+        <div class="tags">
+          <span>C#</span><span>OOP</span><span>Console</span>
         </div>
-    </section>
+        <a href="#" class="card-link">Ver projeto →</a>
+      </div>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 - Desenvolvido no ecossistema PortfolioHUB.</p>
-        </div>
-    </footer>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <p>Desenvolvido por <b>Bruno Venicius</b> · <a href="https://github.com/brunovrz33" target="_blank">GitHub</a></p>
+  </footer>
 
 </body>
 </html>
