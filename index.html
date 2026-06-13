@@ -1,5 +1,79 @@
 <!DOCTYPE html>
-<html>
-<head><title>PortfolioHUB</title></head>
-<body><h1>PortfolioHUB em Construção</h1></body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | PortfolioHUB</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Portfolio<span>HUB</span></a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-avatar">
+                <img src="assets/img/perfil.jpg" alt="Sua Foto de Perfil" class="profile-img">
+            </div>
+            <div class="hero-content">
+                <h1>Olá, eu sou <span>[Seu Nome Aqui]</span></h1>
+                <p class="subtitle">Estudante de Tecnologia & Desenvolvedor em Formação</p>
+                <p class="description">
+                    Seja bem-vindo ao meu PortfolioHUB. Este espaço centraliza meus principais projetos acadêmicos e práticos, servindo como uma vitrine viva das minhas competências técnicas e evolução na engenharia de software.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                    <a href="assets/docs/curriculo.pdf" target="_blank" class="btn btn-secondary">Baixar Currículo (PDF)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Projetos em Destaque</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="card-body">
+                        <h3>Nome do Projeto 1</h3>
+                        <p>Breve descrição do projeto explicativa para professores e recrutadores, detalhando o problema resolvido.</p>
+                        <span class="tech-badge">HTML/CSS</span>
+                        <span class="tech-badge">Git</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" target="_blank" class="card-link">Visualizar Deploy →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-body">
+                        <h3>Nome do Projeto 2</h3>
+                        <p>Descrição clara das tecnologias aplicadas e o propósito acadêmico ou comercial do desenvolvimento.</p>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">API</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" target="_blank" class="card-link">Código no GitHub →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 - Desenvolvido no ecossistema PortfolioHUB.</p>
+        </div>
+    </footer>
+
+</body>
 </html>
